@@ -1,0 +1,18 @@
+CinemaBundle\Entity\TpGenre:
+    type: entity
+    table: tp_genre
+    id:
+        idGenre:
+            type: boolean
+            nullable: false
+            id: true
+            column: id_genre
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

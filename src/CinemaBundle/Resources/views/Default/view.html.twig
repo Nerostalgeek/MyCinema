@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Les films</title>
+
+</head>
+
+<body>
+{% if movies is not empty %}
+    {% for movie in movies %}
+        <article>
+            <header>
+                <h2>{{ movie.titre }}</h2>
+                <time> {{ movie.dateDebutAffiche|date('d-M-Y') }}</time>
+            </header>
+            <div class="content">
+                <p>{{ movie.resum }}</p>
+            </div>
+        </article>
+        <hr class="movies-separation"/>
+    {% endfor %}
+{% else %}
+    <p>Il n'y a aucun film pour l'instant.</p>
+{% endif %}
+
+{% include 'CinemaBundle:Default:pagination.html.twig' %}
+
+</body>
+
+</html>

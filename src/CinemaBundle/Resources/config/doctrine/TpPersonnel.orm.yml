@@ -1,0 +1,32 @@
+CinemaBundle\Entity\TpPersonnel:
+    type: entity
+    table: tp_personnel
+    id:
+        idPersonnel:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_personnel
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFichePerso:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_fiche_perso
+        idJob:
+            type: boolean
+            nullable: false
+            column: id_job
+        horraire:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+        dateRecrutement:
+            type: date
+            nullable: false
+            column: date_recrutement
+    lifecycleCallbacks: {  }

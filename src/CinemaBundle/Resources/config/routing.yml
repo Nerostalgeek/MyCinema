@@ -1,0 +1,7 @@
+cinema_homepage:
+    path:     /cinema
+    defaults: { _controller: CinemaBundle:Default:index }
+
+cinema_view:
+    path: /movies/{page}
+    defaults: {_controller: CinemaBundle:Default:view, page: 1}

@@ -1,0 +1,32 @@
+CinemaBundle\Entity\TpReduction:
+    type: entity
+    table: tp_reduction
+    id:
+        idReduction:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_reduction
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        dateDebut:
+            type: datetime
+            nullable: true
+            column: date_debut
+        dateFin:
+            type: datetime
+            nullable: true
+            column: date_fin
+        pourcentageReduc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: pourcentage_reduc
+    lifecycleCallbacks: {  }

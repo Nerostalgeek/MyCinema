@@ -1,0 +1,44 @@
+CinemaBundle\Entity\TpDistrib:
+    type: entity
+    table: tp_distrib
+    id:
+        idDistrib:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_distrib
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        telephone:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        adresse:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        cpostal:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        ville:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        pays:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

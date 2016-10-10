@@ -1,0 +1,34 @@
+CinemaBundle\Entity\TpSalle:
+    type: entity
+    table: tp_salle
+    id:
+        idSalle:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_salle
+            generator:
+                strategy: IDENTITY
+    fields:
+        numeroSalle:
+            type: boolean
+            nullable: false
+            column: numero_salle
+        nomSalle:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: nom_salle
+        etageSalle:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: etage_salle
+        nbrSiege:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: nbr_siege
+    lifecycleCallbacks: {  }

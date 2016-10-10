@@ -1,0 +1,64 @@
+CinemaBundle\Entity\TpFichePersonne:
+    type: entity
+    table: tp_fiche_personne
+    id:
+        idPerso:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_perso
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        prenom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        dateNaissance:
+            type: datetime
+            nullable: false
+            column: date_naissance
+        email:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: 9f2aa882c23fa6ec3a553aef2b8b9d87
+        adresse:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        cpostal:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        ville:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        pays:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        statut:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+    lifecycleCallbacks: {  }

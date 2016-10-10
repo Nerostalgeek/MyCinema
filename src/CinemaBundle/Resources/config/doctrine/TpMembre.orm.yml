@@ -1,0 +1,45 @@
+CinemaBundle\Entity\TpMembre:
+    type: entity
+    table: tp_membre
+    indexes:
+        id_abo:
+            columns:
+                - id_abo
+    id:
+        idMembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_membre
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFichePerso:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_fiche_perso
+        idAbo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_abo
+        dateAbo:
+            type: datetime
+            nullable: true
+            column: date_abo
+        idDernierFilm:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_dernier_film
+        dateDernierFilm:
+            type: datetime
+            nullable: true
+            column: date_dernier_film
+        dateInscription:
+            type: datetime
+            nullable: true
+            column: date_inscription
+    lifecycleCallbacks: {  }

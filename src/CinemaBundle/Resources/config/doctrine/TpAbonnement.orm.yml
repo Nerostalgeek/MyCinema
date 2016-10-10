@@ -1,0 +1,32 @@
+CinemaBundle\Entity\TpAbonnement:
+    type: entity
+    table: tp_abonnement
+    id:
+        idAbo:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_abo
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        resum:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        prix:
+            type: integer
+            nullable: false
+            unsigned: false
+        dureeAbo:
+            type: boolean
+            nullable: false
+            column: duree_abo
+    lifecycleCallbacks: {  }

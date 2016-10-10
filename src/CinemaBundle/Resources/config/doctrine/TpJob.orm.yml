@@ -1,0 +1,27 @@
+CinemaBundle\Entity\TpJob:
+    type: entity
+    table: tp_job
+    id:
+        idJob:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_job
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        salaire:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        cadre:
+            type: boolean
+            nullable: false
+    lifecycleCallbacks: {  }
